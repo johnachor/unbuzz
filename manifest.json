@@ -1,0 +1,18 @@
+{
+  "name": "Unbuzz",
+  "version": "0.01",
+  "description": "Replaces common political buzzwords with their most common meaning.  I do not claim to be unbiased.",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "replacer.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
